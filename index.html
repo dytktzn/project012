@@ -36,9 +36,17 @@
 </head>
 <body>
 
-  <iframe class="super-full-iframe" src="https://miniapps.my.id/project012/"></iframe>
+  <iframe id="myIframe" class="super-full-iframe" src=""></iframe>
+
+  <script>
+    const iframe = document.getElementById('myIframe');
+    const baseUrl = "https://miniapps.my.id/project012/";
+    const uniqueUrl = baseUrl + "?t=" + new Date().getTime();
+    iframe.src = uniqueUrl;
+  </script>
 
 </body>
 </html>
+
 
 
